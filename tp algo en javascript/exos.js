@@ -89,7 +89,7 @@ function ForceMdp() {
 function SaisieNonCorrecte() {
 
     do {
-        var saisie = prompt("quel est le genre de votre tamagotchi, male ou femelle?");
+        var saisie = prompt("quel est le genre de votre tamagotchi,F male ou femelle?");
         var str = saisie.toLowerCase();
 
         if (str === "femelle") {
