@@ -6,14 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function comparePrenom(qui) {
-            var prenomRef = "Antoine";
-            if (qui === prenomRef) {
-                // code lorsque comparaison ok.
-            }
+        /* function comparePrenom(qui) {
+             var prenomRef = "Antoine";
+             if (qui === prenomRef) {
+                 // code lorsque comparaison ok.
+             }
+         }
+         var prenom = "Antonio";
+         comparePrenom(prenom);*/
+
+        /* function mfct() {
+             var x = 6;
+             console.log(x);
+         }
+ 
+         let x = 1;
+ 
+         if (x === 1) {
+             let x = 2;
+ 
+             console.log(x);   //x vaut :2
+             mfct();
+ 
+         }
+         mfct();
+         console.log(x);    //x vaut : 1*/
+
+        /*  var a = 5;
+          var b = 5;
+          function multiplication(param1, param2) {
+              return param1 * param2;
+          }
+          var c = multiplication(a, b);
+          var d = multiplication(c, c);*/
+
+        function resultatTest() {
+            var data=function() {};
+            var data.val1 = 5;
+            var data.val2 = 7;
+            return data;
         }
-        var prenom = "Antonio";
-        comparePrenom(prenom);
+        var toto = resultatTest();
+        alert(toto.val1 + " " + toto.val2);
     </script>
 </head>
 

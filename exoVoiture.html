@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+
+        class Voiture {
+            constructor(couleur, marque, cylindre) {
+                this.couleur = couleur;
+                this.marque = marque;
+                this.cylindre = cylindre;
+            }
+        }
+
+        var couleur = prompt("saisir une couleur");
+        var marque = prompt("saisir une marque");
+        var cylindre = prompt("saisir une cylindre");
+
+        let maVoiture = new Voiture(couleur, marque, cylindre);
+
+        if (maVoiture.couleur == "rouge") {
+            alert("quel tempérament de feu ! ");
+        }
+
+        if (maVoiture.marque == "ferrari") {
+            alert("rapide et cher");
+        }
+
+        if (maVoiture.cylindre == 600) {
+            alert("sacré moteur");
+        }
+
+        if (maVoiture.couleur == 600 && maVoiture.couleur == "jaune") {
+            alert("c'est une corvette");
+        }
+
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>
