@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devoir javascript</title>
+</head>
+
+<body>
+    <h1>TEST 2</h1></br>
+    <button onclick="category()">Demande de l'âge</button>
+
+    <script>
+        function category() {
+            var age = prompt("Saisir l'âge de l'enfant");
+            if (age != "" && !isNaN(age)) {
+                if (age >= 6 && age <= 7) {
+                    alert("L'enfant appartient  à la catégorie 'Poussin' ");
+                }
+                else if (age >= 8 && age <= 9) {
+                    alert("L'enfant appartient  à la catégorie  'Pupille'");
+                }
+                else if (age >= 10 && age <= 11) {
+                    alert("L'enfant appartient  à la catégorie  'Minime'");
+                }
+                else if (age >= 12 && age <= 17) {
+                    alert("L'enfant appartient  à la catégorie 'Cadet'");
+                }
+                else {
+                    alert("L'âge saisie n'appartient à aucune catégorie");
+                }
+
+            }
+            else {
+                alert("Saisie invalide");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

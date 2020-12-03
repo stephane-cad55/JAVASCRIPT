@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devoir javascript</title>
+</head>
+
+<body>
+    <h1>TEST 1</h1></br>
+    <button onclick="alert('Hello word')">Hello World</button>
+    <button onclick='enterName()'>My name</button>
+
+    <script>
+        function enterName() {
+            var name = prompt("Quel est votre nom?");
+            var conf = confirm("Vous confirmez vous appelez " + name);
+            if (conf) {
+                alert("Bonjour " + name);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

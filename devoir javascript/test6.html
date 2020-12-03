@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Devoir javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <h1>TEST 6</h1></br>
+    <script>
+        Operators();
+        function Operators() {
+            let expressions = ["a = b", "a == b", "c == b "];
+            let result = "";
+            expressions.forEach(e => {
+                let a = 10, c = 4, b = 4;
+
+                result += "Si a =" + a + " , c =" + c + " , b = " + b + ", résultat de \"" + e + "\" : " + eval(e) + "\nRésultats:  a =" + a + " , c =" + c + " , b = " + b + "\n\n"
+            });
+            alert(result);
+        }
+
+    </script>
+</body>
+
+</html>

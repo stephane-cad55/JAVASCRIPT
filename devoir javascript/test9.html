@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devoir javascript</title>
+</head>
+
+<body>
+    <h1>TEST 9</h1></br>
+
+    <script>
+        calc();
+        function calc() {
+            let result, confirmation;
+            do {
+                let result = eval(prompt("Saisir un premier nombre") + prompt("Quel opérateur choississez vous ( +, -, *, / ) ?") + prompt("Saisir un deuxième nombre"));
+
+                if (confirmation = confirm("Exécuter?")) {
+                    alert("Résultat: " + result);
+                }
+            } while (!confirmation);
+        }
+    </script>
+
+</body>
+
+</html>

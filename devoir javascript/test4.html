@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devoir javascript</title>
+</head>
+
+<body>
+    <h1>TEST 4</h1></br>
+    <button onclick="result()">montant à payer</button>
+
+    <script>
+
+        function result() {
+            var montant = parseInt(window.prompt("Entrez votre montant"));
+            var remise = parseFloat(window.prompt("Entrez la remise : 0.01 %"));
+            var resul = montant - (montant * remise);
+            {
+                window.alert(resul);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

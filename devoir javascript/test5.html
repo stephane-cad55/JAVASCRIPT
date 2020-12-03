@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Devoir javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <h1>TEST 5</h1></br>
+
+    <script>
+        age();
+        function age() {
+            let year = prompt("Entrez votre année de naissance?");
+            let d = new Date();
+            if (!isNaN(year)) {
+                alert("Votre âge est de : " + (d.getFullYear() - year) + " an(s)");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
