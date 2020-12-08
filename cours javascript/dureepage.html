@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Les minuteries</title>
+    <script>
+        var minute = 0;
+        var seconde = 0;
+        function chrono() {
+            document.form1.minute.value = minute;
+            document.form1.seconde.value = seconde; seconde++;
+            if (seconde == 60) {
+                minute = minute + 1; seconde = 0;
+            }
+            compteur = setTimeout('chrono()', 1000);
+        }
+        function stopper() {
+            clearInterval(compteur);
+        }</script>
+</head>
+
+<body onLoad="chrono()">
+    <form name="form1" method="post" action="">
+        Vous &ecirc;tes sur cette page depuis
+        <input name="minute" type="text" id="minute" size="5" maxlength="5">
+        minute(s) et
+        <input name="seconde" type="text" id="seconde" size="5" maxlength="5">
+        seconde(s).
+    </form>
+    <p>
+        <input type="button" name="Submit" value="Stopper" onclick="stopper()">
+    </p>
+    <p>&nbsp;</p>
+</body>
+
+</html>

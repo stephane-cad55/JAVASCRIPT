@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tp2 javascript</title>
+
+    <script>
+
+        var acc = [10, 20, 40, 70, 90, 150];
+        var dec = [150, 120, 80, 60, 20, 0];
+        var vMax = 0;
+        var accelere = 0;
+        var freine = 0;
+
+        class Train {
+            constructor(accelere, freine) {
+                this.accelere = accelere;
+                this.freine = freine;
+            }
+        }
+
+        function constructTrain() {
+            var monTrain1 = new Train(accelere, freine);
+            var monTrain2 = new Train(accelere, freine);
+            alert("Vous avez créé 2 trains")
+        }
+
+        function Acceleration() {
+            for (var i = 0; i < acc.lenght; i++) {
+                vitesse = acc[i];
+            }
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <button onclick="constructTrain()"> création du train</button>
+    <button onclick="rouleTrain()">faire rouler les trains</button>
+    <button onclick="nomTrain1()">nom du train 1</button>
+    <button onclick="constructTrain()">faire rouler train 1</button>
+    <button onclick="nomTrain2()">création autre train</button>
+    <button onclick="constructTrain()">nom train 2</button>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript">
+
+        /* dividende = 10;
+         try {
+             resultat = dividende / diviseur;
+         }
+         catch (exception) {
+             alert("Division Impossible");
+         }*/
+
+        /* dividende = 10;
+         try {
+             resultat = dividende / diviseur;
+         }
+         catch (diviseur) {
+             alert("Division Impossible");
+         }
+         finally {
+             diviseur = 2;
+             resultat = dividende / diviseur;
+             alert("Le résultat de la division est : " + resultat);
+         }*/
+
+        /* function voiture(propMarque, propModele, propAnnee) {
+             this.marque = propMarque;
+             this.modele = propModele;
+             this.annee = propAnnee;
+         }
+         var mavoiture = new voiture("Peugeot", "307", "2017");
+ 
+         alert("Voici les caractéristiques de mon objet voiture :" + "\r la marque : " + mavoiture.marque + "\r le modèle : " + mavoiture.modele + "\r l’année : " + mavoiture.annee);*/
+
+        /* function tailleposition() {
+             var myWindow = window.open("", "myWindow", "width=200, height=100");
+             for (i = 0; i < 200; i++) {
+                 h = 4;
+                 z = 4;
+                 MyWindow.moveBy(h, z);
+                 MyWindow.resizeBy(h, z);
+             }
+         }*/
+
+      /*  fenetre = window.open("lesitedugreta.fr", "Nouvelle", "height=100,width=300,menubar=yes, toolbar = yes, resizable = no, scrollbar = no")*/$
+
+        /*  navigateur = navigator.appName.substring(0, 3);
+          version = navigator.appVersion.substring(0, 1);
+          adresse = window.location;
+          titre = window.name;
+          function ajoutfavoris() {
+              rep = confirm("Voulez-vous ajouter cette page dans vos favoris ?");
+              if (rep == false) {
+                  return;
+              }
+              else {
+                  if (navigateur == "Mic" && version >= 4) {
+                      url_site = adresse;
+                      titre_site = titre;
+                      window.external.AddFavorite(url_site, titre_site);
+                  }
+                  else {
+                      alert("Utilisez le raccourci-clavier Ctrl+D pour ajouter cette page à vos favoris");
+                  }
+              }
+          }*/
+
+        /*  function popup() {
+              f = window.open("http://www.greta-lr.fr/", "Greta", "location=no");
+          }*/
+
+       /* var texte = prompt("Saisissez une chaîne de caractères :", "Saisissez ici votre chaîne de caractères");
+document.write("Voici la chaîne de caractères en gras :");
+        document.write(texte.bold());
+        document.write("Voici la chaîne de caractères en italique : ");
+        document.write(texte.italics()); document.write("Voici la chaîne de caractères en caractères clignotants : ");
+document.write(texte.blink());
+        document.write("Voici la chaîne de caractères en rouge : ");
+        document.write(texte.fontcolor("red"));
+        document.write("Voici la chaîne de caractères barrée : "); document.write(texte.strike());
+        document.write("Voici la chaîne de caractères en différentes tailles :");
+        for (i = 0; i < 7; i++) { document.write(texte.fontsize(i)); }*/
+
+        aujourdhui = new Date;
+        jour = aujourdhui.getDate();
+        if (jour < 10) {
+            jour = '0' + jour;
+        }
+        alert("numéro de mois : " + aujourdhui.getMonth());
+        mois = aujourdhui.getMonth() + 1;
+        annee = aujourdhui.getFullYear();
+        document.write("Nous sommes le " + jour + "/" + mois + "/" + annee);
+
+    </script>
+
+</head>
+
+<!----body onUnload="window.fenetre.close()">
+    <input type="button" name="Submit" value="Nouvelle" onClick="fenetre.focus()">
+    <input type="button" name="Submit2" value="Masquer" onClick="fenetre.blur()">
+</body>
+
+<body>
+    <form name="form1" action="">
+        <input name="Modifier" type="button" id="Modifier" onClick=tailleposition(); value="Modifier">
+    </form>
+</body>
+
+<body onLoad="ajoutfavoris()">
+</body>
+
+<body>
+    <input type="submit" name="Submit" value="Popup" onclick="popup()" />
+</body---->
+
+<body>
+
+</body>
+
+</html>
