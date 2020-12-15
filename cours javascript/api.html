@@ -1,0 +1,101 @@
+<!--DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Les API JavaScript</title>
+    <meta charset=utf-8>
+    <style type="text/css">
+        p {
+            width: 200px;
+            border: 2px dotted silver;
+            padding-left: 5px;
+        }
+
+        button {
+            margin-top: 12px;
+        }
+    </style>
+    <script type="text/javascript">
+        function go() {
+            var x = document.getElementsByClassName("deux");
+            x[0].style.background = "rgb(195,215,235)";
+        } 
+    </script>
+</head>
+
+<body>
+    <p class="un"> Paragraphe 1</p>
+    <p class="deux"> Paragraphe 2</p>
+    <p class="trois"> Paragraphe 3</p>
+    <button onclick="go()">Sélectionner</button>
+</body>
+
+</html>
+
+<!DOCTYPE html> 
+<html lang="fr"> 
+<head> 
+<title>Les API JavaScript</title> 
+<meta charset=utf-8> 
+<style type="text/css"> 
+p { width: 200px; 
+    border: 2px dotted silver; 
+    padding-left: 5px;} 
+button { margin-top: 12px;} 
+</style> 
+<script type="text/javascript"> 
+function go() { 
+var x = document.getElementsByClassName("box"); 
+for (i = 0; i < x.length; i++) { 
+x[i].style.background = "rgb(195,215,235)"; 
+} 
+}  
+</script> 
+</head> 
+<body> 
+<p class="box"> Paragraphe 1</p> 
+<p class="autre"> Paragraphe 2</p> 
+<p class="box"> Paragraphe 3</p> 
+<p class="box"> Paragraphe 4</p> 
+<button onclick="go()">Sélectionner</button> 
+</body> 
+</html-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Les API JavaScript</title>
+    <meta charset=utf-8>
+    <style type="text/css">
+        li {
+            width: 200px;
+            border: 1px solid silver;
+            margin-bottom: 5px;
+            padding-left: 5px;
+        }
+
+        button {
+            margin-top: 12px;
+        }
+    </style>
+    <script type="text/javascript">
+        function go() {
+            document.querySelector("li:nth-of-type(3)").style.background =
+                "rgb(195,215,235)";
+        } 
+    </script>
+</head>
+
+<body>
+    <ul>
+        <li>Item de liste 1</li>
+        <li>Item de liste 2</li>
+        <li>Item de liste 3</li>
+        <li>Item de liste 4</li>
+        <li>Item de liste 5</li>
+    </ul>
+    <button onclick="go()">Sélectionner</button>
+</body>
+
+</html>

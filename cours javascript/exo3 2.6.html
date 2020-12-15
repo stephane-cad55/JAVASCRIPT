@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>exo3 2.6</title>
+
+    <script type="text/javascript">
+
+        function showHxContent() {
+
+            let h1 = window.event.target;
+            let div = h1.nextElementSibling;
+            console.log(h1)
+            div.style.display = "block";
+        }
+
+        function hideAllDivs() {
+
+            let div = document.querySelectorAll("h1 + div")
+            console.log(div);
+            div.foreach(e => e.style.display = "none");
+
+        }
+
+        function alertTitle() {
+            let titleNode = document.querySelector("h1:nth-of-type(" +
+                document.getElementById('title').value + ")");
+            if (titleNode) {
+                alert(titleNode.innerHTML)
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1 onClick="showHxContent()">Partie 1</h1>
+
+    <div style="display:none">
+
+        <p>Mon premier paragraphe</p>
+
+        <p>Mon second paragraphe</p>
+
+    </div>
+
+    <h1 onClick="showHxContent()">Partie 2</h1>
+
+    <div style="display:none">
+
+        <p>Mon premier paragraphe</p>
+
+        <p>Mon second paragraphe</p>
+
+    </div>
+
+    <p>
+
+        <input type="submit" value="Masquer" onClick="hideAllDivs()" />
+
+    </p>
+
+    <p>
+
+        Titre n°: <input type="text" id="title" />
+
+        <input type="submit" value="Afficher" onClick="alertTitle()" />
+
+    </p>
+
+</body>
+
+</html>
