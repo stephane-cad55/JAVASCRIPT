@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tp dom partie 2</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        #block1 {
+            height: 250px;
+            width: 250px;
+            border: dashed 1px black;
+            font-size: 20px;
+            color: blue;
+        }
+
+        #block2 {
+            height: 300px;
+            width: 250px;
+            border: solid 1px black;
+            font-size: 20px;
+            color: blue;
+        }
+
+        p {
+            font-size: 30px;
+            color: rgb(9, 9, 236);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="title row">
+
+        <div class="col d-flex justify-content-center align-items-center">
+
+            <p>Liste</p>
+
+        </div>
+
+        <div class="col d-flex justify-content-center align-items-center">
+
+            <p>Panier</p>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col d-flex justify-content-center align-items-center">
+
+            <div id="block1">
+
+                <ul>
+
+                    <li>Pomme</li></br>
+                    <li>Poire</li></br>
+                    <li>Prune</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="col d-flex justify-content-center align-items-center">
+
+            <div id="block2"></div>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
