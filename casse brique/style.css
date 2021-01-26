@@ -5,6 +5,13 @@
 
 canvas {
     display: block;
-    margin: 0 auto;
-    background: rgb(255, 187, 0);
+    margin: 150px 620px ;
+    border-radius: 10px;
+    background-image: url(img/5274-dark-brick-wall.jpg);
+}
+
+body{
+    background-image: url(img/75742.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
