@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>mon tableau de bord</title>
+    <link rel="stylesheet" href="tui-grid.css">
+    <script src="tui-grid.js"></script>
+
+</head>
+
+<body>
+
+    <div id="grid"></div>
+
+    <script>
+
+        const grid = new tui.Grid({
+
+            el: document.getElementById('grid'),
+
+            data: gridData.chevaux,
+
+            header: {
+
+                height: 120,
+
+                complexColumns: [
+
+                    {
+
+                        header: 'Haras',
+
+                        name: 'identite',
+
+                        childNames: ['nom', 'age', 'ecuyer', 'courses']
+
+                    }
+
+                ]
+
+            },
+
+            scrollX: false,
+
+            scrollY: false,
+
+            columns: colonne
+
+        });
+
+        tui.Grid.applyTheme("striped");
+
+    </script>
+
+</body>
+
+</html>
