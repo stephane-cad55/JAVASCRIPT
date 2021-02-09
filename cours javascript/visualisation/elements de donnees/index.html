@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>element de données</title>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header data-titre="une recette d'Alexis">
+        une recette d'Alexis
+    </header>
+
+    <section data-sujet="Réalisée en collaboration avec Jonathan Altieri"
+        data-contenu="une petite histoire de tarte aux pommes">
+        Réalisée en collaboration avec Gauss Boh
+    </section>
+
+    <section data-subject="Co-directed by John" data-content="a little story of apple pie">
+        Co-directed by John
+    </section>
+
+    <script>
+
+header = document.querySelector('header');
+        header.innerHTML = header.dataset['titre'];
+        
+        ["sujet", "subject"].forEach(name => {
+            newParagraph = document.createElement("p");
+            newParagraph.innerHTML = document.querySelector('[data-' + name + ']').dataset[name];
+            header.append(newParagraph);
+        });
+
+        ["contenu", "content"].forEach(name => {
+            section = document.querySelector('[data-' + name + ']');
+            section.innerHTML = section.dataset[name];
+        });
+        
+    </script>
+
+</body>
+
+</html>

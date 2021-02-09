@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>mon tableau de bord</title>
+    <link rel="stylesheet" href="toastui-chart.min.css">
+    <script src="toastui-chart.min.js"></script>
+</head>
+
+<body>
+
+    <div id="chart"></div>
+
+    <script>
+
+        const chartData = {
+
+            categories: [
+                'Grand prix de Paris',
+                'Turfing Motion',
+                'Rambouillet',
+                'Mille Fleurs',
+                'Sprint in Desert',
+                'Arc de Triomphe',
+                'Abudhabi',
+                'Vincennes',
+                'Longchamp',
+                'Deauville',
+                'Maisons-Lafitte',
+                'Saint Cloud',
+                'Auteuil'
+            ],
+            // les séries
+            series: [
+                {
+                    name: 'Pitou',
+                    data: [444, 457, 477, 479, 446, 476, 457, 472, 467, 455, 458, 458, 451],
+                },
+                {
+                    name: 'Diana',
+                    data: [466, 507, 472, 475, 485, 470, 500, 496, 487, 491, 490, 476, 489],
+                },
+                {
+                    name: 'Général du Pommeau',
+                    data: [422, 421, 419, 424, 421, 417, 424, 411, 411, 410, 414, 416, 418],
+                },
+            ],
+        };
+
+        const options = {
+            chart: { title: 'Variation du poids', width: 1300, height: 400 },
+            xAxis: { pointOnColumn: false, title: { text: 'Courses' } },
+            yAxis: { title: 'Poids' },
+
+            //variante: graphique zoomable (plusieurs variantes existent)
+            series: { zoomable: true },
+        };
+
+        const el = document.getElementById('chart'); //on sélectionne l'identifiant où sera inséré le graphique
+
+        //barChart, ou areaChart -> type de graphique
+        const chart = toastui.Chart.barChart({ el, data: chartData, options });
+
+    </script>
+
+</body>
