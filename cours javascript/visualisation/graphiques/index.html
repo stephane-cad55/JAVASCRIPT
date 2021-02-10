@@ -54,13 +54,13 @@
             yAxis: { title: 'Poids' },
 
             //variante: graphique zoomable (plusieurs variantes existent)
-            series: { zoomable: true },
+            // series: { zoomable: true },
         };
 
         const el = document.getElementById('chart'); //on sélectionne l'identifiant où sera inséré le graphique
 
         //barChart, ou areaChart -> type de graphique
-        const chart = toastui.Chart.barChart({ el, data: chartData, options });
+        const chart = toastui.Chart.areaChart({ el, data: chartData, options });
 
     </script>
 
